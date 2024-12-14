@@ -201,7 +201,6 @@ nav {
   padding: 20px;
   width: 100%;
   /* margin: 0 auto; */
-  flex-direction: column;
 }
 
 .tab {

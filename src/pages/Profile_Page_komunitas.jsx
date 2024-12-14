@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import '../assets/css/Profile_page.css';
-import '../assets/js/Profile_page.js';
 
 function Profile_Page_komunitas() {
   const [activeTab, setActiveTab] = useState('aktif'); // Mengelola tab yang aktif
@@ -15,9 +13,9 @@ function Profile_Page_komunitas() {
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Profil Musetix</title>
-        {/* <link rel="stylesheet" href="src/assets/css/Profile_page.css" /> */}
+        <link rel="stylesheet" href="src/assets/css/Profile_page.css" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossOrigin="anonymous" />
-        {/* <script src="src/assets/js/Profile_page.js"></script> */}
+        <script src="src/assets/js/Profile_page.js"></script>
       </head>
 
       <body>
@@ -35,8 +33,7 @@ function Profile_Page_komunitas() {
           <nav className="nav">
             <a href="/">Beranda</a>
             <a href="/Event">Event</a>
-            {/* <a href="/Profile_Page_komunitas">PPK</a> */}
-            <a href="/Tiket">Tiket</a>
+            <a href="/Tiket_page">Tiket</a>
             <a href="/Profil_User">
               <img src="./assets/img/profile.png" alt="profile" className="icon-profile" />
             </a>
@@ -59,7 +56,7 @@ function Profile_Page_komunitas() {
               <h3>Biografi</h3>
               <p>Bereksplorasi lewat cerita. Teater Koma sudah berdiri sejak tahun 2000, sudah banyak emosi yang kita sampaikan lewat cerita.</p>
               <h3>Komunitas</h3>
-              <div className="social-icons" style={{ display: 'flex' }}>
+              <div className="social-icons">
                 <a href="#">
                   <img src="./assets/img/Vector.png" alt="Discord" />
                 </a>
@@ -71,7 +68,7 @@ function Profile_Page_komunitas() {
           </div>
 
           {/* Event Section */}
-          <div className="events" style={{ width: '80%', display: 'flex' }}>
+          <div className="events" style={{ width: '80%' }}>
             <div className="tab">
               <button className={`tablinks ${activeTab === 'aktif' ? 'active' : ''}`} onClick={() => handleTabClick('aktif')}>
                 Event Aktif
@@ -130,7 +127,7 @@ function Profile_Page_komunitas() {
             <a href="/Term_of_Condition">Syarat dan Ketentuan</a>
             <a href="/Privacy_Policy">Kebijakan Privasi</a>
             <a href="/Term_of_Condition_comunity">Peraturan Komunitas</a>
-            <a href="/Pusat_bantuan">Pusat Bantuan</a>
+            <a href="/pusat_bantuan">Pusat Bantuan</a>
           </div>
         </footer>
       </body>
