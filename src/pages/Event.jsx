@@ -1,15 +1,12 @@
 import React from 'react';
 import '../assets/css/Home.css';
 import '../assets/css/Footer.css';
-{
-  /* <link rel="stylesheet" href="src/assets/css/Home.css" />; */
-}
+
 
 function Event() {
   return (
     <div>
       <div>
-        <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Musetix - Home</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossOrigin="anonymous" />
